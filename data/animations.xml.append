@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<animSheet name="thruster_tantive" w="100" h="33" fw="25" fh="33">effects/thruster_tantive.png</animSheet>
+<anim name="thruster_tantive">
+    <sheet>thruster_tantive</sheet>
+    <desc length="4" x="0" y="0"/>
+    <time>0.5</time>
+</anim>
+
+<animSheet name="room_conference_cvx_tantive" w="70" h="70" fw="70" fh="70">ship/interior/room_conference_cvx_tantive.png</animSheet>
+<anim name="room_conference_cvx_tantive">
+    <sheet>room_conference_cvx_tantive</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="cvx_unique_leia" w="315" h="455" fw="35" fh="35">people/cvx_unique_leia_base.png</animSheet>
+<anim name="cvx_unique_leia_clone">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="6" x="0" y="2"/>
+    <time>0.75</time>
+</anim>
+<anim name="cvx_unique_leia_death_right">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="5" x="3" y="0"/>
+    <time>0.75</time>
+</anim>
+<anim name="cvx_unique_leia_death_left">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="5" x="0" y="2"/>
+    <time>0.75</time>
+</anim>
+<anim name="cvx_unique_leia_walk_down">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="0" y="12"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_walk_right">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="4" y="12"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_walk_up">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="0" y="11"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_walk_left">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="4" y="11"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_shoot_down">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="3" x="0" y="10"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_shoot_right">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="3" x="3" y="10"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_shoot_up">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="3" x="6" y="10"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_shoot_left">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="3" x="0" y="1"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_fire_down">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="0" y="9"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_fire_right">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="4" y="9"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_fire_up">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="0" y="8"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_fire_left">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="4" y="8"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_repair">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="9" x="0" y="7"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_punch_up">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="6" x="3" y="1"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_punch_down">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="6" x="0" y="6"/>
+    <time>1.0</time>
+</anim>
+<anim name="cvx_unique_leia_teleport">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="9" x="0" y="3"/>
+    <time>0.5</time>
+</anim>
+<anim name="cvx_unique_leia_type_right">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="0" y="5"/>
+    <time>0.75</time>
+</anim>
+<anim name="cvx_unique_leia_type_left">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="4" y="5"/>
+    <time>0.75</time>
+</anim>
+<anim name="cvx_unique_leia_type_up">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="0" y="4"/>
+    <time>0.75</time>
+</anim>
+<anim name="cvx_unique_leia_type_down">
+    <sheet>cvx_unique_leia</sheet>
+    <desc length="4" x="4" y="4"/>
+    <time>0.75</time>
+</anim>
+<anim name="cvx_unique_leia_portrait">
+    <sheet>human</sheet>
+    <desc length="1" x="0" y="0"/>
+    <time>1</time>
+</anim>
+
+<animSheet name="explosion_stun_leia" w="640" h="64" fw="64" fh="64">effects/explosion_stun_leia_strip10.png</animSheet>
+<anim name="explosion_stun_leia">
+    <sheet>explosion_stun_leia</sheet>
+    <desc length="10" x="0" y="0"/>
+    <time>0.75</time>
+</anim>

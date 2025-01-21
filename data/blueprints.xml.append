@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<shipBlueprint name="PLAYER_SHIP_CVX_TANTIVE" layout="cvx_tantive" img="cvx_tantive">
+	<class>CR90 Corvette</class>
+	<name>Tantive IV</name>
+	<desc>Originally on a mission to deliver medical supplies to members of the Rebel Alliance, the crew of this vessel now find themselves in a strange universe whose Rebellion stands for terror and oppression.</desc>
+	<systemList>
+		<battery power="1" room="19" start="true" img="room_battery_9" />
+		<cloaking power="1" room="8" start="false" img="room_cloaking_11" />
+		<clonebay power="1" room="13" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="12" start="true" img="room_doors_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="14" start="false" img="room_drones_15" />
+		<engines power="3" room="0" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="false" img="room_hacking_cvx_tantive" />
+		<medbay power="1" room="13" start="false" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="1" start="false" img="room_mind_8" />
+		<oxygen power="1" room="2" start="true" img="room_oxygen_9" />
+		<pilot power="1" room="15" start="true" img="room_pilot_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="6" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="11" start="true" img="room_shields_3">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="3" start="false" />
+		<weapons power="3" room="7" start="true" img="room_weapons_8">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+	<weaponSlots>4</weaponSlots>
+	<droneSlots>2</droneSlots>
+	<weaponList missiles="14" count="4">
+		<weapon name="LASER_BURST_2" />
+		<weapon name="LASER_BURST_2" />
+		<weapon name="BOMB_HEAL" />
+	</weaponList>
+	<droneList drones="2" count="2" />
+	<health amount="30" />
+	<maxPower amount="7" />
+	<crewCount amount="3" class="human" />
+    <mapImage>map_icon_tantive</mapImage>
+</shipBlueprint>
+
+<crewBlueprint name="cvx_unique_leia">
+	<title>Human Princess</title>
+	<short>Human Princess</short>
+	<desc>Though she serves a pacifist planet, Princess Leia is commited to the fight for freedom and liberty for all races.</desc>
+	<cost>60</cost>
+	<rarity>0</rarity>
+	<powerList>
+		<power>Stun power (activate in crew box)</power>
+		<power>Skills improve slightly faster</power>
+	</powerList>
+</crewBlueprint>

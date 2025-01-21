@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mod:findLike type="ships" limit="1">
+    <mod-append:ship name="PLAYER_SHIP_CVX_TANTIVE" a="true" b="false" c="false">
+        <achievement name="ACH_SHIP_CVX_TANTIVE_1" layout="all">
+            <name>We're Doomed!</name>
+            <description>With the CR90 Corvette, survive a battle where your hull is breached and your ship is boarded by 2 or more enemies without losing any crew.</description>
+            <icon>tantive_ach_1</icon>
+            <lockImage>tantive_ach_1_lock</lockImage>
+        </achievement>
+        <achievement name="ACH_SHIP_CVX_TANTIVE_2" layout="all">
+            <name>Consular Ship</name>
+            <description>Complete the unlock quests for 2 other ships during a run with the CR90 Corvette.</description>
+            <icon>tantive_ach_2</icon>
+            <lockImage>tantive_ach_2_lock</lockImage>
+        </achievement>
+        <achievement name="ACH_SHIP_CVX_TANTIVE_3" layout="all">
+            <name>Only You Could Be So Bold</name>
+            <description>Defeat 3 enemy crew members using only Princess Leia during a single battle with the CR90 Corvette.</description>
+            <icon>tantive_ach_3</icon>
+            <lockImage>tantive_ach_3_lock</lockImage>
+        </achievement>
+    </mod-append:ship>
+    <mod-append:customShip name="PLAYER_SHIP_CVX_TANTIVE">
+        <crewLimit>10</crewLimit>
+        <crew>
+            <cvx_unique_leia room="11" name="Leia"/>
+        </crew>
+        <!-- Undecided on this, seems a bit obtrusive
+        <rooms>
+            <room id="8">
+                <roomAnim renderLayer="1">room_conference_cvx_tantive</roomAnim>
+            </room>
+        </rooms>
+        -->
+    </mod-append:customShip>
+</mod:findLike>
+
+<mod:findLike type="crew" limit="1">
+    <mod-append:race name="cvx_unique_leia">
+        <essential>1</essential>
+        <skills>
+            <piloting req="13"/>
+            <engines req="13"/>
+            <shields req="50"/>
+            <weapons req="58"/>
+            <repair req="16"/>
+            <combat req="7"/>
+        </skills>
+        <deathSounds>
+            <deathSound>femaleDeath1</deathSound>
+            <deathSound>femaleDeath2</deathSound>
+            <deathSound>femaleDeath3</deathSound>
+        </deathSounds>
+        <powerEffect>
+            <cooldown>12</cooldown>
+            <jumpCooldown>reset</jumpCooldown>
+            <powerSounds>
+                <powerSound>leiaStun</powerSound>
+            </powerSounds>
+            <req type="enemy">
+                <enemyInRoom/>
+            </req>
+            <req type="player">
+                <enemyInRoom/>
+            </req>
+            <buttonText>STUN</buttonText>
+            <tooltip>Ready: Click to stun nearest enemy</tooltip>
+            <cooldownColor r="230" g="237" b="133"/>
+            <effectAnim>explosion_stun_leia</effectAnim>
+        </powerEffect>
+    </mod-append:race>
+</mod:findLike>
+
+<mod:findLike type="events" limit="1">
+    <mod-append:variable name="loc_ach_ship_breached" op="set" val="0"/>
+    <mod-append:variable name="loc_ach_intruder_threshold" op="set" val="0"/>
+    <mod-append:variable name="loc_ach_crew_lost" op="set" val="0"/>
+    <mod-append:variable name="loc_ach_ship_unlock_count" op="set" val="0"/>
+</mod:findLike>
+
+<mod:findLike type="scripts" limit="1">
+    <mod-append:script>data/tantive_scripts/ships.lua</mod-append:script>
+    <mod-append:script>data/tantive_scripts/ships-ach.lua</mod-append:script>
+</mod:findLike>

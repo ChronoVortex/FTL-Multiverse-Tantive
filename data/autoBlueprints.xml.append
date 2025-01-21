@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blueprintList name="BLUELIST_CREW_HUMAN">
+	<name>human</name>
+	<name>cvx_unique_leia</name>
+</blueprintList>
