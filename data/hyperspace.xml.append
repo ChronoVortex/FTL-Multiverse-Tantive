@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<version>^1.16.0</version>
+
 <mod:findLike type="ships" limit="1">
     <mod-append:ship name="PLAYER_SHIP_CVX_TANTIVE" a="true" b="false" c="false">
         <achievement name="ACH_SHIP_CVX_TANTIVE_1" layout="all">
@@ -22,6 +24,7 @@
         </achievement>
     </mod-append:ship>
     <mod-append:customShip name="PLAYER_SHIP_CVX_TANTIVE">
+		<hiddenAug>FOR_MULTIVERSE</hiddenAug>
         <crewLimit>10</crewLimit>
         <crew>
             <cvx_unique_leia room="11" name="Leia"/>
@@ -38,6 +41,8 @@
 
 <mod:findLike type="crew" limit="1">
     <mod-append:race name="cvx_unique_leia">
+		<suffocationModifier>0.83</suffocationModifier>
+		<fireDamageMultiplier>0.83</fireDamageMultiplier>
         <essential>1</essential>
         <skills>
             <piloting req="13"/>
@@ -65,7 +70,8 @@
                 <enemyInRoom/>
             </req>
             <buttonText>STUN</buttonText>
-            <tooltip>Ready: Click to stun nearest enemy</tooltip>
+            <tooltip>[COOLDOWN:12s  DURATION:7s]
+Stun nearest enemy crew in the same room.</tooltip>
             <cooldownColor r="230" g="237" b="133"/>
             <effectAnim>explosion_stun_leia</effectAnim>
         </powerEffect>

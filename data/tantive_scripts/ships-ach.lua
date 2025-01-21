@@ -2,23 +2,9 @@
 -- HELPER FUNCTIONS --
 ----------------------
 
-local function vter(cvec)
-    local i = -1
-    local n = cvec:size()
-    return function()
-        i = i + 1
-        if i < n then return cvec[i] end
-    end
-end
-
-local function userdata_table(userdata, tableName)
-    if not userdata.table[tableName] then userdata.table[tableName] = {} end
-    return userdata.table[tableName]
-end
-
-local function string_starts(str, start)
-    return string.sub(str, 1, string.len(start)) == start
-end
+local vter = mods.multiverse.vter
+local userdata_table = mods.multiverse.userdata_table
+local string_starts = mods.multiverse.string_starts
 
 local function should_track_achievement(achievement, ship, shipClassName)
     return ship and
@@ -46,10 +32,8 @@ end
 
 local function event_has_ship_unlock(event)
     if event.unlockShip > -1 then return true end
-    --[[ Use in Multiverse release when HS 1.16.0 is available
     local customEvent = Hyperspace.CustomEventsParser.GetInstance():GetCustomEvent(event.eventName)
     if customEvent and string.len(customEvent.unlockShip) > 0 then return true end
-    --]]
     return false
 end
 

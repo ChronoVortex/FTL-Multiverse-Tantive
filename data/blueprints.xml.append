@@ -5,7 +5,7 @@
 	<name>Tantive IV</name>
 	<desc>Originally on a mission to deliver medical supplies to members of the Rebel Alliance, the crew of this vessel now find themselves in a strange universe whose Rebellion stands for terror and oppression.</desc>
 	<systemList>
-		<battery power="1" room="19" start="true" img="room_battery_9" />
+		<battery max="2" power="1" room="19" start="true" img="room_battery_9" />
 		<cloaking power="1" room="8" start="false" img="room_cloaking_11" />
 		<clonebay power="1" room="13" start="false">
 			<slot>
@@ -18,7 +18,7 @@
 				<number>1</number>
 			</slot>
 		</doors>
-		<drones power="2" room="14" start="false" img="room_drones_15" />
+		<drones max="8" power="2" room="14" start="false" img="room_drones_15" />
 		<engines power="3" room="0" start="true" img="room_engines_2">
 			<slot>
 				<direction>down</direction>
@@ -45,14 +45,14 @@
 				<number>0</number>
 			</slot>
 		</sensors>
-		<shields power="2" room="11" start="true" img="room_shields_3">
+		<shields max="8" power="2" room="11" start="true" img="room_shields_3">
 			<slot>
 				<direction>left</direction>
 				<number>2</number>
 			</slot>
 		</shields>
 		<teleporter power="1" room="3" start="false" />
-		<weapons power="3" room="7" start="true" img="room_weapons_8">
+		<weapons max="8" power="2" room="7" start="true" img="room_weapons_8">
 			<slot>
 				<direction>up</direction>
 				<number>1</number>
@@ -68,19 +68,20 @@
 	</weaponList>
 	<droneList drones="2" count="2" />
 	<health amount="30" />
-	<maxPower amount="7" />
+	<maxPower amount="6" />
 	<crewCount amount="3" class="human" />
-    <mapImage>map_icon_tantive</mapImage>
+    <mv-mapImage>map_icon_tantive</mv-mapImage>
 </shipBlueprint>
 
 <crewBlueprint name="cvx_unique_leia">
 	<title>Human Princess</title>
 	<short>Human Princess</short>
-	<desc>Though she serves a pacifist planet, Princess Leia is commited to the fight for freedom and liberty for all races.</desc>
+	<desc>Though she serves a pacifist planet, Princess Leia is committed to the fight for freedom and liberty for all races.
+
+Inherited Human stats: minor hazardous damage resistance, learns non-combat skills faster</desc>
 	<cost>60</cost>
 	<rarity>0</rarity>
 	<powerList>
-		<power>Stun power (activate in crew box)</power>
-		<power>Skills improve slightly faster</power>
+		<power>Active Ability: Stuns nearest enemy crew in the room for 7 seconds</power>
 	</powerList>
 </crewBlueprint>

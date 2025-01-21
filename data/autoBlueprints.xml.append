@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<blueprintList name="BLUELIST_CREW_HUMAN">
-	<name>human</name>
-	<name>cvx_unique_leia</name>
-</blueprintList>
+<mod:findName type="blueprintList" name="LIST_CREW_HUMAN">
+	<mod-append:name>cvx_unique_leia</mod-append:name>
+</mod:findName>
